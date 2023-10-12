@@ -43,8 +43,8 @@ const HeaderLoader = () => {
 };
 
 const footerLogo: Record<"light" | "dark", string> = {
-  dark: "https://cdn.timerise.io/app/timerise-logo-invert.png",
-  light: "https://cdn.timerise.io/app/timerise-logo.png",
+  dark: "https://cdn.timerise.io/admin/docknock-logo.png",
+  light: "https://cdn.timerise.io/admin/docknock-logo.png",
 };
 
 const ErrorHeaderWrapper = styled.div`
@@ -52,8 +52,7 @@ const ErrorHeaderWrapper = styled.div`
 `;
 
 const TimeRiseLogo = styled.img`
-  width: 86px;
-  height: 18px;
+  width: 100px;
   position: relative;
   top: -12px;
 `;

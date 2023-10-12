@@ -86,8 +86,8 @@ const StyledLink = styled.a`
 `;
 
 const footerLogo: Record<"light" | "dark", string> = {
-  dark: "https://cdn.timerise.io/app/timerise-logo-invert.png",
-  light: "https://cdn.timerise.io/app/timerise-logo.png",
+  dark: "https://cdn.timerise.io/admin/docknock-logo.png",
+  light: "https://cdn.timerise.io/admin/docknock-logo.png",
 };
 
 const ErrorFooterWrapper = styled.div`
@@ -136,7 +136,7 @@ const Footer = () => {
         <Typography typographyType="label" as="div" color="darkGrey">
           {t("footer.powered-by")}
         </Typography>
-        <StyledLink href="https://timerise.io/" target="_blank">
+        <StyledLink href="https://sign-up.doc-knock.com/sign-up" target="_blank">
           <TimeRiseLogo src={footerLogo[themeType]} alt="timerise logo" data-cy="time-rise-footer-logo" />
         </StyledLink>
       </Row>

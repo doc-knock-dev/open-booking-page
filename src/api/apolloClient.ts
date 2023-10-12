@@ -4,12 +4,12 @@ import { GraphQLWsLink } from "@apollo/client/link/subscriptions";
 import { getMainDefinition } from "@apollo/client/utilities";
 
 const httpLink = new HttpLink({
-  uri: process.env.REACT_APP_TIMERISE_API,
+  uri: "https://api.timerise.io/v1",
 });
 
 const wsLink = new GraphQLWsLink(
   createClient({
-    url: process.env.REACT_APP_TIMERISE_WS!,
+    url: "wss://api.timerise.io/v1",
     connectionParams: {},
   }),
 );

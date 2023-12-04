@@ -32,8 +32,8 @@ const VerticalLine = styled.div`
 
 const TimeRiseLogo = styled.img`
   margin-left: 10px;
-  height: 10px;
-  margin-bottom: 5px;
+  height: 20px;
+  margin-bottom: 10px;
 `;
 
 export const FooterLinkWrapper = styled.div`
@@ -82,7 +82,7 @@ const StyledButton = styled.button`
 `;
 
 const StyledLink = styled.a`
-  height: 10px;
+  height: 20px;
 `;
 
 const footerLogo: Record<"light" | "dark", string> = {
@@ -118,7 +118,7 @@ const Footer = () => {
   return (
     <Wrapper mb={1.5} mt={5} jc="space-between">
       <Row className="left-column">
-        <Typography typographyType="label" color="darkGrey" as="div" style={{ whiteSpace: "nowrap", marginTop: "8px" }}>
+        <Typography typographyType="label" color="darkGrey" as="div" style={{ whiteSpace: "nowrap", marginTop: "10px" }}>
           {t("footer.copyright")}
         </Typography>
         <VerticalLine />
@@ -132,12 +132,12 @@ const Footer = () => {
           {t(`theme.${themeType === "dark" ? "light" : "dark"}`)}
         </StyledButton>
       </Row>
-      <Row ai="flex-start" style={{ marginTop: "8px" }}>
+      <Row ai="flex-start" style={{ marginTop: "0px" }}>
         <Typography typographyType="label" as="div" color="darkGrey">
           {t("footer.powered-by")}
         </Typography>
         <StyledLink href="https://sign-up.doc-knock.com/sign-up" target="_blank">
-          <TimeRiseLogo src={footerLogo[themeType]} alt="timerise logo" data-cy="time-rise-footer-logo" />
+          <TimeRiseLogo src={footerLogo[themeType]} alt="logo" data-cy="time-rise-footer-logo" />
         </StyledLink>
       </Row>
     </Wrapper>

@@ -26,3 +26,4 @@ e2e/serviceAccountKey.json
 .env
 package-lock.json
 *.cache
+.firebase

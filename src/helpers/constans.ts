@@ -1,8 +1,8 @@
 import { SpaceProvider } from "models/booking";
 
-export const TIMERISE_LOGO_URL = "https://cdn.timerise.io/booking-page/favicon.png";
+export const TIMERISE_LOGO_URL = "https://cdn.timerise.io/admin/docknock-logo.png";
 
-export const TIMERISE_HEADER_TITLE = "Timerise";
+export const TIMERISE_HEADER_TITLE = "Doc-Knock";
 
 export const COUNTRY_PHONE_PREFIXES: Record<string, string> = {
   BD: "880",

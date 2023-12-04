@@ -61,7 +61,7 @@ const ErrorHeader = () => {
   const themeType = useRecoilValue(themeSelector);
   return (
     <ErrorHeaderWrapper>
-      <TimeRiseLogo src={footerLogo[themeType]} alt="timerise logo" data-cy="time-rise-footer-logo" />
+      <TimeRiseLogo src={footerLogo[themeType]} alt="logo" data-cy="time-rise-footer-logo" />
     </ErrorHeaderWrapper>
   );
 };
